@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+.informacion{
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion h1{
+    font-size: 35px;
+    color: #FFB816;
+}
+
+.informacion p{
+    font-size: 20px;
+}
+
+.informacion img{
+    width: 300px;
+}
+
+.inventario{
+    margin-top: 50px;
+    border: 1px solid #fcba03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+
+}
+
+.inventario .inventario-top{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 183, 0, 0.4);
+}
+
+.inventario .inventario-top img{
+    margin-top: 30px;
+    width: 200px;
+}
+
+.inventario .inventario-top h1{
+    font-size: 35px;
+    color: #fcba03;
+}
+
+.inventario:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition: 0.5s;
+}
+
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  }
+ .input-box-excepcion span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  }
+  .user-details .input-box input, select, .input-box-excepcion input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-color: #fcba03;
+  }
+
+  .input-box-excepcion input{
+    height: 45px;
+    width: 50%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-color: #fcba03;
+  }
+
+  .user-details .input-box #icono, .input-box-excepcion #icono{
+    color: #ff7d03;
+  }
+
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid,
+  .user-details .input-box-excepcion input:focus,
+  .user-details .input-box-excepcion input:valid{
+    border-color: #fcba03;
+  }
+   form .button{
+     height: 45px;
+     margin: 35px 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   form .button a{
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fcba03;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+   }
+   form .button a:hover{
+    background-color: #ff7d03;
+    }
+   @media(max-width: 659px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    .container{
+      height: auto;
+    }
+    .container .title{
+      height: auto;
+    }
+    }
+    @media(max-width: 518px){
+    .container .content .category{
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  /* Estilos Tabla */
+
+  table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      max-width: 100%;
+  }
+
+  tr:nth-child(even){
+    background-color: #fcba03;
+}
+
+
+  th, td{
+      border-style: double;
+      text-align: center;
+      padding: 15px;
+  }
+
+  

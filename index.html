@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inventario</title>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+</head>
+<body>
+    <center>
+    <div class="informacion">
+        <h1>Inventario con HTML CSS y JS</h1>
+        <p>Proyecto Creado y Programado por Eddie Santiago Delgado</p>
+        <img src="img/Inventario.svg">
+    </div>
+</center>
+
+    <center>
+    <div class="inventario">
+        <div class="inventario-top">
+            <img src="img/Usuarios.svg">
+            <h1>Inventory User</h1>
+        </div>
+
+        <div class="content">
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Codigo Producto <i class="fas fa-qrcode" id="icono"></i></span>
+                  <input type="number" placeholder="Inserte el Codigo" id="codigo" value="1" disabled>
+                </div>
+                <div class="input-box">
+                  <span class="details">Nombre Producto <i class="fas fa-box-open" id="icono"></i></span>
+                  <input type="text" placeholder="Inserte el Nombre" id="nombre">
+                </div>
+                <div class="input-box">
+                  <span class="details">Marca Producto <i class="fas fa-copyright" id="icono"></i></span>
+                  <input type="text" placeholder="Inserte la Marca" id="marca">
+                </div>
+                <div class="input-box">
+                  <span class="details">Precio Unidad <i class="fas fa-money-bill-wave" id="icono"></i></span>
+                  <input type="number" placeholder="Inserte el Precio" id="precio">
+                </div>
+                  </div>
+                  <div class="input-box-excepcion">
+                    <span class="details">Cantidad <i class="fas fa-people-carry" id="icono"></i></span>
+                    <input type="number" placeholder="Inserte la Cantidad" id="cantidad">
+                  </div>
+                  <div class="button">
+                    <a id="insertar">Insertar</a>
+                    <a id="buscar">Buscar</a>
+                    <a id="modificar">Modificar</a>
+                    <a id="excel">Exportar Excel</a>
+                  </div>
+                </form>
+
+                <table border="1" id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Codigo Producto</th>
+                            <th>Nombre Producto</th>
+                            <th>Marca Producto</th>
+                            <th>Precio Unidad</th>
+                            <th>Cantidad</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <br><br>
+
+            </div>
+    </div>
+</center>
+
+<!-- Usamos la libreria TabletoExcel para exportar la tabla en excel -->
+
+
+<script src="js/main.js"></script>
+<script src="js/table2excel.js"></script>
+
+</body>
+</html>
